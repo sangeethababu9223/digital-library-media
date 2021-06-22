@@ -11,6 +11,6 @@ app.use(requireHTTPS);
 app.use(express.static('./dist/digital-library-media'));
 app.get('/*', function(req, res) {
     res.sendFile('index.html', {root: 'dist/digital-library-media/'}
-  );
-  });
-  app.listen(process.env.PORT || 8080);
+);
+});
+app.listen(process.env.PORT || 8080);
