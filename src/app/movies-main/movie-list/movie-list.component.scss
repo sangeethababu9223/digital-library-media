@@ -1,0 +1,11 @@
+.movie-list {
+    &__item {
+
+    }
+    &__poster {
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,1 +1,18 @@
-<h3>Movie List Main</h3>
+<div class="movie-list__container">
+    <h3 class="movie-list__heading">Movie List</h3>
+    <div class="row">
+        <div *ngFor="let movie of movies" class="col-md-4 movie-list__item">
+            <h5 class="movie-list__heading">
+                {{movie.title}}
+            </h5>
+            <div class="movie-list__date">
+                {{movie.release_date}}
+            </div>
+            <div class="movie-list__poster" style="background-image: url({{movie.poster}});">
+            </div>
+            <div class="movie-list__overview">
+                {{movie.overview}}
+            </div>
+        </div>
+    </div>
+</div>
